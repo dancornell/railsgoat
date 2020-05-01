@@ -27,12 +27,12 @@ group :development, :mysql do
   gem 'pry'
   gem 'rack-livereload'
   gem 'rb-fsevent'
-  gem 'travis-lint'
+  gem 'travis-lint', '>= 2.0.0'
   gem 'better_errors'
   gem 'binding_of_caller'
 end
 
-gem 'simplecov', :require => false, :group => :test
+gem 'simplecov', '>= 0.14.1', :require => false, :group => :test
 
 group :development, :test, :mysql do
   gem 'launchy'
