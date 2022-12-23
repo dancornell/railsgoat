@@ -49,7 +49,7 @@ end
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'coffee-rails'
 gem 'jquery-fileupload-rails'
 gem 'uglifier'
