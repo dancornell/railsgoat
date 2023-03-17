@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #don't upgrade
-gem 'rails', '4.2.8'
+gem 'rails', '6.1.7.3'
 
 ruby '2.3.4'
 
@@ -49,7 +49,7 @@ end
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.8'
 gem 'coffee-rails'
 gem 'jquery-fileupload-rails'
 gem 'uglifier'
@@ -96,4 +96,4 @@ gem 'mailcatcher'
 #end
 
 #For Rails 4.2
-gem 'responders'
+gem 'responders', '>= 3.0.0'
