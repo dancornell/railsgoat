@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #don't upgrade
-gem 'rails', '4.2.8'
+gem 'rails', '7.1.0'
 
 ruby '2.3.4'
 
@@ -28,7 +28,7 @@ group :development, :mysql do
   gem 'rack-livereload'
   gem 'rb-fsevent'
   gem 'travis-lint'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.3.0'
   gem 'binding_of_caller'
 end
 
@@ -39,7 +39,7 @@ group :development, :test, :mysql do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'poltergeist'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.6.1'
   gem 'test-unit'
 end
 
@@ -49,16 +49,16 @@ end
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails'
-gem 'coffee-rails'
-gem 'jquery-fileupload-rails'
+gem 'sass-rails', '>= 5.0.8'
+gem 'coffee-rails', '>= 5.0.0'
+gem 'jquery-fileupload-rails', '>= 1.0.0'
 gem 'uglifier'
 gem 'turbolinks' # New for Rails 4.0
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', :platforms => :ruby
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.2'
 
 # To use ActiveModel has_secure_password
  gem 'bcrypt'
@@ -96,4 +96,4 @@ gem 'mailcatcher'
 #end
 
 #For Rails 4.2
-gem 'responders'
+gem 'responders', '>= 3.0.0'
