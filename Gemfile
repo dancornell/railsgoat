@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #don't upgrade
-gem 'rails', '4.2.8'
+gem 'rails', '7.0.0'
 
 ruby '2.3.4'
 
@@ -49,7 +49,7 @@ end
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 gem 'coffee-rails'
 gem 'jquery-fileupload-rails'
 gem 'uglifier'
@@ -87,7 +87,7 @@ gem 'execjs'
 gem 'therubyracer'
 
 # Add SMTP server support using MailCatcher
-gem 'mailcatcher'
+gem 'mailcatcher', '>= 0.9.0'
 
 #For Rails 4.0
 #group :doc do
