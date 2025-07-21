@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 #don't upgrade
-gem 'rails', '4.2.8'
+gem 'rails', '4.2.9'
 
 ruby '2.3.4'
 
@@ -11,7 +11,7 @@ gem 'rake'
 # gem 'rails', git: 'https://github.com/rails/rails'
 
 gem 'sqlite3'
-gem 'foreman'
+gem 'foreman', '>= 0.86.0'
 gem 'crack', '0.3.1'
 
 # Pry for Rails, not in dev group in case running via prod/staging @ a training
@@ -19,11 +19,11 @@ gem 'pry-rails'
 
 group :development, :mysql do
   gem 'brakeman'
-  gem 'bundler-audit'
-  gem 'guard-brakeman'
+  gem 'bundler-audit', '>= 0.7.0'
+  gem 'guard-brakeman', '>= 0.8.4'
   gem 'guard-livereload'
   gem 'guard-rspec'
-  gem 'guard-shell'
+  gem 'guard-shell', '>= 0.7.2'
   gem 'pry'
   gem 'rack-livereload'
   gem 'rb-fsevent'
@@ -39,7 +39,7 @@ group :development, :test, :mysql do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'poltergeist'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.6.1'
   gem 'test-unit'
 end
 
@@ -49,16 +49,16 @@ end
 
 # Gems used only for assets and not required
 # in production environments by default.
-gem 'sass-rails'
-gem 'coffee-rails'
-gem 'jquery-fileupload-rails'
+gem 'sass-rails', '>= 5.0.7'
+gem 'coffee-rails', '>= 5.0.0'
+gem 'jquery-fileupload-rails', '>= 1.0.0'
 gem 'uglifier'
 gem 'turbolinks' # New for Rails 4.0
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', :platforms => :ruby
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.2'
 
 # To use ActiveModel has_secure_password
  gem 'bcrypt'
@@ -70,9 +70,9 @@ gem 'jquery-rails'
  gem 'unicorn'
 
 # Pow related gem
-gem 'powder'
+gem 'powder', '>= 0.3.1'
 
-gem 'aruba'
+gem 'aruba', '>= 0.14.13'
 #gem 'minitest', '~> 4.0', :require=> "minitest/autorun"
 
 #gem 'minitest'
@@ -96,4 +96,4 @@ gem 'mailcatcher'
 #end
 
 #For Rails 4.2
-gem 'responders'
+gem 'responders', '>= 2.4.1'
